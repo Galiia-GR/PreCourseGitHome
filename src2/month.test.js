@@ -2,6 +2,7 @@
  * @jest-environment jsdom
  */
 import {month} from "./month";
+
 describe("month", () => {
     it("should to return name month April when you enter a month number 4", () => {
         jest.spyOn(window, "prompt").mockReturnValue("4");
