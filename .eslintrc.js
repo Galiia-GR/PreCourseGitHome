@@ -12,9 +12,9 @@ module.exports = {
   rules: {
     "import/prefer-default-export": "off",
     "no-console": "off",
-    "max-len": [ "error", {
-ignoreComments: true,
-      }],
-  },
+    "no-alert": "off",
+	'max-len': "off",
+    'default-case': ["error", { "commentPattern": "^skip\\sdefault" }],
+      },
   plugins: ["jest"],
 };
